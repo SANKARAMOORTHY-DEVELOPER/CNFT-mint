@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Titan+One");
+:root {
+  --h1-font-size: 10vmin;
+  --primary-color: rgb(245, 102, 0);
+  --secondary-color: rgb(230, 96, 0);
+  --tiger-image: url(./whyte-c.gif);
+  --texture-image: url(./giphy.gif);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--primary-color);
+}
+
+.text-wrapper {
+  position: relative;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Titan One", sans-serif;
+  font-size: var(--h1-font-size);
+  text-transform: uppercase;
+  background: center/cover var(--secondary-color) var(--tiger-image);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+h1:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: var(--texture-image);
+  mix-blend-mode: soft-light;
+}
+h1 span {
+  font-size: calc(var(--h1-font-size) / 1.825);
+}

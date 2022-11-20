@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400);
+
+
+@-webkit-keyframes trippy {
+  0% { background: #333333 }
+  50% { background: #34373C }
+  100% { background: #2F4F4F }
+}
+@keyframes trippy {
+  0% { background: #333333 }
+  50% { background: #34373C }
+  100% { background: #2F4F4F }
+  /*20% { background: #9DFDDE }
+  40% { background: #B5FDCC }
+  60% { background: #CDFDB9 }
+  80% { background: #E5FDA7 }
+  100% { background: #FDFD95 }*/
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-animation: trippy 5s alternate infinite ease;
+          animation: trippy 5s alternate infinite ease;
+}
+
+.para {
+  text-align: center;
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'Lato';
+  font-weight: 300;
+  font-size: 65px;
+  color: white;
+  border: 3px solid #ffd194;
+  padding-top: 4px;
+}
+
+.optional {
+  color: #ffd194;
+}
+
+.cancont {
+  /* what a silly name */
+  height: 45vh;
+  width: 45vh;
+  margin: 10 auto;
+  position: relative;
+
+}
+
+#myCanvas {
+  max-height: 900px;
+  max-width: 900px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: ivory 0 0 100px;
+}
+
+.container-fluid {
+  padding: 3px 0;
+  height: 20vh;
+  width: 300px;
+  margin: 0 auto;
+  font-family: 'Lato';
+  font-weight: 600;
+  font-size: 70px;
+  color: #ffd194;
+  text-align: center;
+  margin-top: 5px;
+}
+.form-control {
+
+
+font-size: 25px;
+
+}
+.form-group {
+  width: 500px !important;
+height: 300px
+  position: relative;
+  left: 50%;
+ top: 50%;
+  transform: translate(-43%);
+}
+
+input {
+  width: 700px !important;
+height: 100px !important;
+text-align: center;
+  margin-top: 5px;
+font-size: 25px;
+}
+:-ms-input-placeholder {
+  text-align: center;
+}
+.btn, .btn:hover, .btn:active, .btn:focus {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: #ffd194;
+  background: #C8FF00;
+  width: 350px !important;
+height: 100px;
+font-family: 'Lato';
+  font-weight: 600;
+  font-size: 50px;
+}
